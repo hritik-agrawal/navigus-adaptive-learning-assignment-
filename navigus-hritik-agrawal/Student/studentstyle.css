@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(45deg, #e1e1e4, #9790f2);
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.courses-container {
+  margin-right: 50rem;
+  margin-bottom: 20rem;
+}
+
+.course {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 700px;
+}
+
+.course h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.course h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.course-preview {
+  background-color: #2a265f;
+  color: #fff;
+  padding: 30px;
+  max-width: 250px;
+}
+
+.course-preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.course-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.progress-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  width: 150px;
+}
+
+.progress {
+  background-color: #ddd;
+  border-radius: 3px;
+  height: 5px;
+  width: 100%;
+}
+
+.progress::after {
+  border-radius: 3px;
+  background-color: #2a265f;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 66%;
+}
+
+.progress-text {
+  font-size: 10px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-color: #2a265f;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 25px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #040316;
+  font-size: 10px;
+  padding: 5px 10px;
+  position: relative;
+  letter-spacing: 1px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.btn2 {
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #040316;
+  font-size: 10px;
+  padding: 5px 10px;
+  position: relative;
+  letter-spacing: 1px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.btn3 {
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #040316;
+  font-size: 10px;
+  padding: 5px 10px;
+  position: relative;
+  letter-spacing: 1px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.btn:hover {
+  background-color: #6a63d1;
+  color: #fff;
+}
+
+.btn1:hover {
+  background-color: #6a63d1;
+  color: #fff;
+}
+.btn2:hover {
+  background-color: #6a63d1;
+  color: #fff;
+}
+.btn3:hover {
+  background-color: #6a63d1;
+  color: #fff;
+}
+
+.floating-btn {
+  border-radius: 26.5px;
+  background-color: #001f61;
+  border: 0px solid #001f61;
+  box-shadow: 0 16px 22px -17px #03153b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  top: 55px;
+  right: 250px;
+  z-index: 999;
+}
+
+.floating-btn:hover {
+  background-color: #ffffff;
+  color: #001f61;
+}
+
+.floating-btn:focus {
+  outline: none;
+}
+
+.floating-text {
+  background-color: #001f61;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-family: 'Muli';
+  padding: 7px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 998;
+}
+
+.floating-btn1 {
+  border-radius: 26.5px;
+  background-color: #001f61;
+  border: 0px solid #001f61;
+  box-shadow: 0 16px 22px -17px #03153b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  top: 55px;
+  right: 130px;
+  z-index: 999;
+}
+
+.floating-btn1:hover {
+  background-color: #6a63d1;
+
+  color: #ffffff;
+}
+
+.floating-btn1:focus {
+  outline: none;
+}
+
+.floating-text {
+  background-color: #001f61;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-family: 'Muli';
+  padding: 7px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 998;
+}
+
+.floating-btn2 {
+  cursor: pointer;
+  padding: 12px 20px;
+  position: fixed;
+
+  top: 40px;
+  left: 20px;
+  z-index: 999;
+  max-width: 170px;
+}
+.exit-img {
+  padding-left: 1px;
+  max-width: 12.5px;
+  filter: invert(100%);
+}
+
+.floating-text a {
+  color: #ff7500;
+  text-decoration: none;
+}
